@@ -21,7 +21,6 @@
 .knowledge__img{
     width: 100%;
     display: block;
-    
 }
 
 .subtitle{
@@ -29,20 +28,16 @@
     font-size: 3rem;
     margin-bottom: 25px;
     margin: 3rem;
-    
-    
 }
 
 .about__paragraph{
     line-height: 1.7;
     font-size: 1.5rem;
     margin: 3rem;
-    
 }
 
 .testimonios{
     display:grid;
-    
     margin-top: 100px;
 }
 
@@ -66,6 +61,7 @@
     .about__paragraph{
         font-size: 1rem;
     }
+    
     .knowledge__img{
         width: 80%;
         display: block;
