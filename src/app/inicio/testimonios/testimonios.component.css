@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 
-.titulo {
+.titulo h1 {
   text-align: center;
   color: #1049a1;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
   padding-bottom: 2%;
   padding-top: 6%;
 }

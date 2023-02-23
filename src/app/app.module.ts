@@ -20,7 +20,9 @@ import { TestimoniosComponent } from './inicio/testimonios/testimonios.component
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
@@ -42,7 +44,10 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
