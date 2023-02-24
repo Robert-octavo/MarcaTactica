@@ -25,7 +25,8 @@
 .subtitle {
     color: #1049a1;
     font-size: 3rem;
-    margin-bottom: 25px;
+    /* margin-bottom: 50px; */
+    padding-bottom: 1em;
     margin: 3rem;
     text-align: center;
   }
