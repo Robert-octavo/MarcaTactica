@@ -44,7 +44,7 @@ hr {
     line-height: 3rem;
 }
 
-.about__ul{
+.about__ul {
     line-height: 1.7;
     font-size: 1.5rem;
     margin: 3rem;
@@ -52,10 +52,49 @@ hr {
 
 li {
 	list-style: none;
+    text-align: justify;
 }
 
 .fa-building-circle-check, .fa-people-group, .fa-globe, .fa-industry, .fa-chart-simple {
     color: rgb(59, 91, 152);
+}
+
+@media screen and (max-width: 1250px){
+    .subtitle {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .about__ul li {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .knowledge__container{
+        grid-template-columns: 1fr;
+    }
+
+    .knowledge__picture{
+        display: none;
+    }
+
+    .knowledge__text{
+        padding: 0px 25px;
+    }
+
+    .knowledge__paragraph{
+        margin: 0;
+    }
+
+    .subtitle{
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+    .about__ul{
+        margin: 0;
+    }
 }
 
 /* li::before {
