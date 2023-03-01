@@ -1,4 +1,4 @@
-<header class="hero">
+<!-- <header class="hero">
   <nav class="nav container">
     <a [routerLink]="['']" class="logo">
       <img src="../../assets/marcatactica.png" alt="" class="logo">
@@ -8,7 +8,14 @@
         <a [routerLink]="['']" class="nav__links">Nosotros</a>
       </li>
       <li class="nav_items">
-        <a [routerLink]="['servicios']" class="nav__links">Servicios</a>
+        <a [routerLink]="['servicios']" class="nav__links">Servicios +</a>
+        <ul>
+          <li class="nav_items"><a href="#">Retail</a></li>
+          <li class="nav_items"><a href="#">Inteligencia</a></li>
+          <li class="nav_items"><a href="#">Expansión</a></li>
+          <li class="nav_items"><a href="#">Marca</a></li>
+          <li class="nav_items"><a href="#">Inmobiliario</a></li>
+        </ul>
       </li>
       <li class="nav_items">
         <a [routerLink]="['clientes']" class="nav__links">Clientes</a>
@@ -22,11 +29,43 @@
       <li class="nav_items">
         <a [routerLink]="['contacto']" class="nav__links">Contacto</a>
       </li>
-      <img src="../../assets/Close.svg" alt="" class="nav__close" (click)="CerrarMenu()">
+      <img src="../../assets/Close.svg" alt="Close Icon" class="nav__close" (click)="CerrarMenu()">
     </ul>
 
     <div class="nav__menu" (click)="AbrirMenu()">
       <img src="../../assets/menu.svg" alt="" class="nav__img">
     </div>
   </nav>
-</header>
+</header> -->
+
+<div class="hero">
+  <header>
+    <a [routerLink]="['']">
+      <img src="../../assets/marcatactica.png" alt="" class="logo">
+    </a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+    <nav class="navbar">
+      <ul>
+        <li><a [routerLink]="['']">Nosotros</a></li>
+        <li><a [routerLink]="['servicios']">Servicios <i class="fa-solid fa-caret-down"></i></a>
+          <ul>
+            <li><a href="#">Inteligencia</a></li>
+            <li><a href="#">Expansión</a></li>
+            <li><a href="#">Marca</a></li>
+            <li><a href="#">Inmobiliario</a></li>
+          </ul>
+        </li>
+        <li><a [routerLink]="['clientes']">Clientes</a></li>
+        <li><a [routerLink]="['conferencias']">Conferencias</a></li>
+        <li><a [routerLink]="['testimonios']">Testimonios</a></li>
+        <li><a [routerLink]="['contacto']">Contacto</a></li>
+        <!-- <img src="../../assets/Close.svg" alt="Close Icon" class="nav__close" (click)="CerrarMenu()"> -->
+      </ul>
+
+      <!-- <div class="nav__menu" (click)="AbrirMenu()">
+        <img src="../../assets/menu.svg" alt="" class="nav__img">
+      </div> -->
+    </nav>
+  </header>
+</div>

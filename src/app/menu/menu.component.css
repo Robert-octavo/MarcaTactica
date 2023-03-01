@@ -1,4 +1,4 @@
-
+/* 
 :root{
     --padding-container:100px 0;
     --color-title: #001a49;
@@ -6,19 +6,19 @@
 
 .container{
     width: 100%;
-    /* max-width: 1900px; */
+    max-width: 1900px; 
     margin: 0 auto;
     overflow: hidden;
     padding:  0px 60px 0px 60px;
 }
 
-/* .container__menu{
+ .container__menu{
     width: 300%;
     max-width: 1900px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
-} */
+} 
 
 .hero{
     width: 100%;
@@ -29,6 +29,7 @@
     display: grid;
     grid-template-rows: 100px 1fr;
     color:#fff;
+    z-index: 100;
 }
 
 .hero::before{
@@ -47,10 +48,10 @@
 
 .nav{
     --padding-container:0;
-    height: 150%;
+    height: 270%;
     display: flex;
     align-items: center;
-    font-size: 22px
+    font-size: 22px;
 }
 
 nav a {
@@ -58,7 +59,7 @@ nav a {
 }
 
 .logo{    
-    height: 100%;
+    height: 80%;
     cursor: pointer;
 }
 
@@ -84,7 +85,6 @@ nav a {
     
 }
 
-
 .nav_items{
     list-style: none;
 }
@@ -93,7 +93,6 @@ nav a {
     font-weight: 300;
 }
 
-
 .nav__img{
     display: block;
     width: 30px;
@@ -101,6 +100,39 @@ nav a {
 
 .nav__close{
     display: var(--show,none);
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li ul {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: #fff;
+}
+
+.nav ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(203, 200, 200, 0.1);
+}
+
+.nav ul li ul li a {
+    font-size: 20px;
+    padding: 4px;
+    color: #f2eded;
+    display: block;
+    text-decoration: none;
+}
+
+
+.nav ul li:focus-within > ul,
+.nav ul li:hover > ul {
+    display: initial;
+    top: 28px;
 }
 
 @media (max-width: 1255px){
@@ -139,4 +171,164 @@ nav a {
         cursor: pointer;
     }
 
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+header {
+    position: relative; 
+    top: 0; left: 0; right: 0;
+    /* background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1); */
+    background-color: transparent;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+.hero{
+    width: 100%;
+    /* height: 100vh; */
+    min-height: 500px;
+    max-height: 500px;
+    position:relative;
+    /* display: grid;
+    grid-template-rows: 100px 1fr; */
+    color:#fff;
+    z-index: 100;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:90% ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 0%), url(../../assets/GEO.jpg);
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 70%, 51% 83%, 0 70%, 0 0);
+    z-index: -1;
+}
+
+header .logo {
+    width: 130px;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fffcfc;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background-color: #333;
+    /* color: #ffffff; */
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 149px;
+    /* background: #f5f4f4; */
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1.2px solid rgba(234, 232, 232, 0.1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:1200px) {
+    header .navbar ul li a {
+        color: #1d1d1d;
+    }
+
+    header .navbar ul li a:hover{
+        color: #d5d4d4;
+    }
+
+    header {
+        padding: 10px 30px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+        /* height: 100vh; */
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
 }
