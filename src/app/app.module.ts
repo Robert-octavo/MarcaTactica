@@ -25,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InteligenciaComponent } from './servicios/inteligencia/inteligencia.component';
 import { ExpansionComponent } from './servicios/expansion/expansion.component';
+import { MarcaComponent } from './servicios/marca/marca.component';
+import { InmobiliarioComponent } from './servicios/inmobiliario/inmobiliario.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { ExpansionComponent } from './servicios/expansion/expansion.component';
     TestimoniosComponent,
     InteligenciaComponent,
     ExpansionComponent,
+    MarcaComponent,
+    InmobiliarioComponent,
   ],
   imports: [
     BrowserModule,
