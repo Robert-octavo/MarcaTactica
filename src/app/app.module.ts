@@ -22,7 +22,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { InteligenciaComponent } from './servicios/inteligencia/inteligencia.component';
+import { ExpansionComponent } from './servicios/expansion/expansion.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     ConstructorasComponent,
     ExpansionComercialComponent,
     TestimoniosComponent,
+    InteligenciaComponent,
+    ExpansionComponent,
   ],
   imports: [
     BrowserModule,
