@@ -6,38 +6,43 @@
     align-items: center;
 } */
 
-.section{
+.section {
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 50px;
    flex-wrap: wrap;
    justify-content: center;
-   
-   
 }
 
-.subtitleContacto{
+.subtitleContacto {
     margin-top: 30px;
     font-size: 25pt;
     color:#a6ce39ff;
     text-align: center;
+    line-height: 1.1em;
 }
-p{
+
+p {
     margin-top: 8px;
     font-size: 16pt;
     color: #fff;
     text-align: center;
 }
 
-.subtitle{
+.advertencia {
+    font-size: 10pt;
+    margin-bottom: 0px;
+}
+
+.subtitle {
     color:#a6ce39ff;
     font-size: 3rem;
     margin-top: 2rem;
     text-align: center;  
 }
 
-.sub{
+.sub {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -45,31 +50,39 @@ p{
     padding-bottom: 10px;
 }
 
-.formulario{
+.formulario {
     align-items: center;
     margin: 40px;
     width: 700px;
     background-color:#1049a1;
     border-radius:1em;
     flex-wrap: wrap;
+    -webkit-box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
+    -moz-box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
+    box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
 }
 
-
 form{
-    
     padding: 50px;
 }
 
-h3{
+h3 {
     color: white;
     font-size: 15pt;
+    margin-bottom: 0px;
 }
 
-textarea{
+h3 span {
+    /* color: #a6ce39ff; */
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+textarea {
     resize: none;
 }
 
-input{
+input {
     margin-top: 5px;
     margin-bottom: 15px;
     width: 100%;
@@ -80,7 +93,7 @@ input{
     padding: 10px;
 }
 
-textarea{
+textarea {
     margin-top: 5px;
     margin-bottom: 15px;
     border-radius:12px;
@@ -89,42 +102,39 @@ textarea{
     padding: 10px;
 }
 
-
-
-.tituloMap{
+.tituloMap {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
     border-bottom: 1px solid white;
     padding-bottom: 10px;
 }
-.subtitleMap{
+
+.subtitleMap {
     color:#a6ce39ff;
     font-size: 3rem;
     text-align: center;  
 }
-.mapa{
+
+.mapa {
     border-radius: 1em;
 }
-.GM{
-    
+
+.GM {
     width: 100%;
     padding: 40px;
     height:45em;
     height:fit-content;
-    
 }
 
-iframe{
+iframe {
    border-radius: 1em;
    border: none;
    width:100%;
    height:723px;
-
 }
 
-
-.btn{
+.btn {
     margin-left: auto;
     margin-right: auto;
     border: none;
@@ -134,7 +144,8 @@ iframe{
     margin-top: 20px;
 }
 
-button{
+
+button {
     color: white;
     background-color: #a6ce39ff;
     border: none;
@@ -142,13 +153,28 @@ button{
     width: 9rem;
     border-radius: 1em;    
     pointer-events: all;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: rgb(154, 188, 58);
+    color: white;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #5d5c61;
+    font-size: 10pt;
+    font-style: italic;
+}
 
 @media (max-width: 800px) {
-    .formulario{
+    .formulario {
         align-items: center;
         margin: 40px;
         width: 500px;
     }
 }
+

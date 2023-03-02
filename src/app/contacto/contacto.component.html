@@ -6,28 +6,32 @@
       </h4>
       <p>Dejanos tus datos y nos pondremos en contacto a la brevedad.</p>
     </div>
-
-    <form action="https://formspree.io/f/xnqyjwro" method="POST">
+    <p class="advertencia">Los campos marcados con <span> <strong>*</strong></span> son obligatorios</p>
+    <!-- <form action="https://formspree.io/f/xnqyjwro" method="POST"> -->
+      <form action="https://formsubmit.co/5e0d9a3ff8e55bb51ad0f1da4510ac0a" method="POST">
       <div class="campos">
-        <h3>Nombre:</h3>
-        <input type="text" name="Nombre" />
+        <h3>Nombre Completo: <span>(*)</span></h3>
+        <input type="text" name="Nombre" placeholder="Nombre y Apellido" required/>
       </div>
       <div class="campos">
         <h3>Telefono:</h3>
-        <input type="number" name="Numero Telefono" />
+        <input type="number" name="Numero Telefono" placeholder="(555) 555-5555"/>
       </div>
       <div class="campos">
-        <h3>Email:</h3>
-        <input type="email" name="email" />
+        <h3>Email: <span>(*)</span></h3>
+        <input type="email" name="email" placeholder="email@domain.com" required/>
       </div>
       <div class="campos">
-        <h3>Ciudad:</h3>
-        <input type="text" name="Ciudad"  />
+        <h3>Ciudad: <span>(*)</span></h3>
+        <input type="text" name="Ciudad" placeholder="Ciudad" required />
       </div>
       <div class="campos">
-        <h3>Mensaje:</h3>
-        <textarea cols="30" rows="10" name="message"></textarea>
+        <h3>Mensaje: <span>(*)</span></h3>
+        <textarea cols="30" rows="10" name="message" placeholder="Mensaje" required></textarea>
       </div>
+      <input type="hidden" name="_next" value="https://marca-tactica.vercel.app/contacto">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Email!">
       <div class="btn">
         <button type="submit">Enviar</button>
       </div>
