@@ -194,7 +194,6 @@ header {
     z-index: 1000;
 }
 
-
 .hero{
     width: 100%;
     /* height: 100vh; */
@@ -240,10 +239,28 @@ header .navbar ul li a {
     display: block;
 }
 
-header .navbar ul li a:hover {
+/*header .navbar ul li a:hover {
     background-color: #333;
-    /* color: #ffffff; */
-}
+     color: #ffffff; 
+}*/
+
+header .navbar ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  header .navbar ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 header .navbar ul li ul {
     position: absolute;
@@ -290,7 +307,7 @@ header label {
     }
 
     header .navbar ul li a:hover{
-        color: #d5d4d4;
+        color: #242323;
     }
 
     header {
