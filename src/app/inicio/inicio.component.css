@@ -1,4 +1,120 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.knowledge{
+    padding-top: 5%;
+}
+
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    padding:50px;
+}
+
+hr {
+    border: 1px solid #1049a1;
+    width: 50%;
+    margin: auto;
+}
+
+.knowledge__picture{
+    max-width: 700px;
+    margin: 3rem;
+}
+
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.knowledge__img{
+    width: 100%;
+    display: block; 
+    border-radius: 5px;
+    -webkit-box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
+    -moz-box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
+    box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
+}
+
+.subtitle{
+    color:#1049a1;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    margin: 3rem;
+    line-height: 3rem;
+}
+
+.about__ul {
+    line-height: 1.7;
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+li {
+	list-style: none;
+    text-align: justify;
+}
+
+.fa-check {
+    color: rgb(59, 91, 152);
+}
+
+.video__youtube {
+    width:750px;
+    height:600px;
+    margin-left: 40px;
+    border-radius: 8px;
+    -webkit-box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
+    -moz-box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
+    box-shadow: 9px 5px 20px -7px rgba(110,106,110,0.82);
+}
+
+@media screen and (max-width: 1250px){
+    .subtitle {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .about__ul li {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .knowledge__container{
+        grid-template-columns: 1fr;
+    }
+
+    .knowledge__picture{
+        display: none;
+    }
+
+    .knowledge__text{
+        padding: 0px 25px;
+    }
+
+    .knowledge__paragraph{
+        margin: 0;
+    }
+
+    .subtitle{
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+    .about__ul{
+        margin: 0;
+    }
+}
+
+
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +160,6 @@
         width: 100%;
         flex-direction: row;
         justify-content: center;
-        /* align-items: center; */
         gap: 4em;
         padding-right: 4em;
         padding-left: 4em;
@@ -57,4 +172,4 @@
     .nosotros__img {
         width: 50%;
     }
-}
+} */
