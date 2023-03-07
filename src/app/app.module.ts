@@ -27,6 +27,7 @@ import { InteligenciaComponent } from './servicios/inteligencia/inteligencia.com
 import { ExpansionComponent } from './servicios/expansion/expansion.component';
 import { MarcaComponent } from './servicios/marca/marca.component';
 import { InmobiliarioComponent } from './servicios/inmobiliario/inmobiliario.component';
+import { RetailComponent } from './servicios/retail/retail.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { InmobiliarioComponent } from './servicios/inmobiliario/inmobiliario.com
     ExpansionComponent,
     MarcaComponent,
     InmobiliarioComponent,
+    RetailComponent,
   ],
   imports: [
     BrowserModule,
