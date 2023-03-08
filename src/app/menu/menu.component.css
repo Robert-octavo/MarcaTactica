@@ -265,7 +265,7 @@ header .navbar ul li a:after {
 header .navbar ul li ul {
     position: absolute;
     left: 0;
-    width: 250px;
+    width: 270px;
     /* background: #f5f4f4; */
     display: none;
 }

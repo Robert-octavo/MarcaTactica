@@ -11,6 +11,7 @@ import { ExpansionComponent } from './servicios/expansion/expansion.component';
 import { MarcaComponent } from './servicios/marca/marca.component';
 import { InmobiliarioComponent } from './servicios/inmobiliario/inmobiliario.component';
 import { RetailComponent } from './servicios/retail/retail.component';
+import { PlaneacionComponent } from './servicios/planeacion/planeacion.component';
 
 const routes: Routes = [
  {path:'', component: InicioComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
  {path:'expansion',component:ExpansionComponent},
  {path:'marca',component:MarcaComponent},
  {path:'inmobiliario',component:InmobiliarioComponent},
- {path:'retail',component:RetailComponent}
+ {path:'retail',component:RetailComponent},
+ {path:'planeacion',component:PlaneacionComponent}
 ];
 
 @NgModule({
