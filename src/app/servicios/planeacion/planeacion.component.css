@@ -54,8 +54,17 @@ li {
     text-align: justify;
 }
 
-.fa-building-circle-check, .fa-people-group, .fa-globe, .fa-industry, .fa-chart-simple {
+.fa-building-circle-check, 
+.fa-people-group, 
+.fa-globe, 
+.fa-industry, 
+.fa-chart-simple, 
+.fa-chess {
     color: rgb(59, 91, 152);
+}
+
+.fa-chess {
+    font-size: 30px;
 }
 
 @media screen and (max-width: 1250px){
