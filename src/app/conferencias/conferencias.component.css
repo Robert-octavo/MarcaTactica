@@ -5,18 +5,28 @@
 }
 
 .grid_container h2 {
-    color:#1049a1;
-    font-size: 3rem;
+    color:#0066B3;
+    font-size: 72px;
     margin-bottom: 25px;
-    margin: 3rem;
-    padding-bottom: 1rem;
     line-height: 1.2;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 1px solid rgb(99, 99, 99);
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .grid_container p {
     line-height: 1.7;
     font-size: 1.5rem;
-    margin: 3rem;
+    margin: 3rem 0;
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(99, 99, 99);
 }
 
 .conferencias__container {
@@ -25,7 +35,6 @@
     grid-auto-rows: 300px 200px;
     grid-gap: 1em;
     grid-auto-flow: dense;
-    /* padding:50px; */
 }
 
 .gallery-item {
@@ -103,6 +112,10 @@
 }
 
 @media screen and (max-width: 790px) {
+    .grid_container {
+        margin: 5em;
+    }
+    
     .conferencias__container {
         grid-template-columns: repeat(1, 1fr);
     }
