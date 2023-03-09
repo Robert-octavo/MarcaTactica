@@ -183,6 +183,7 @@ nav a {
 
 a {
     font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
 }
 
 header {
