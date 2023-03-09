@@ -181,6 +181,10 @@ nav a {
     text-decoration: none;
 }
 
+a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 header {
     position: relative; 
     top: 0; left: 0; right: 0;
