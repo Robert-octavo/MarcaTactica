@@ -6,11 +6,19 @@
 
 .titulo h1 {
   text-align: center;
-  color: #1049a1;
-  font-size: 3rem;
-  font-weight: 500;
+  color:#0066B3;
+  font-size: 72px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
   padding-bottom: 2%;
   padding-top: 6%;
+}
+
+.titulo hr {
+  border: 1px solid rgb(99, 99, 99);
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 .testimonial {
@@ -21,7 +29,7 @@
   justify-content: center;
   align-items: center;
   background: #ffffff;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   padding-top: 0;
 }
 
@@ -45,6 +53,8 @@
   padding: 40px;
   box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
   transform: all 0.5s ease-in;
+  color: rgb(99, 99, 99);
+  border-radius: 8px;
 }
 
 .content::before {
@@ -67,19 +77,23 @@
 }
 
 .content p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-top: 20px;
+  text-align: justify;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .content h2 {
-  font-size: 1.4em;
+  font-size: 2em;
+  font-family: 'Bebas Neue', sans-serif;
   position: absolute;
   bottom: 40px;
   right: 40px;
 }
 
 .content h4 {
-  font-size: .8em;
+  font-size: 1.2em;
+  font-family: 'Bebas Neue', sans-serif;
   position: absolute;
   bottom: 20px;
   right: 40px;
@@ -121,8 +135,12 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#234cb0", endColorstr="#438aeb", GradientType=1);
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 1260px) {
   .card-wrapper {
     flex-direction: column;
+  }
+
+  .titulo {
+    padding-top: 10%;
   }
 }
