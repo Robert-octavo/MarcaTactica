@@ -27,7 +27,7 @@
 
 .footer{
     background-color: #1049a1;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 
@@ -137,5 +137,8 @@
     .footer__container {
         flex-wrap: wrap;
         align-items: space-between;
+    }
+    .footer {
+        margin-top: 0px;
     }
 }
