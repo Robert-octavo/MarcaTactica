@@ -17,29 +17,35 @@
 
 .subtitleContacto {
     margin-top: 30px;
-    font-size: 25pt;
+    font-size: 28pt;
     color:#a6ce39ff;
     text-align: center;
     line-height: 1.1em;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
 }
 
 p {
     margin-top: 8px;
     font-size: 16pt;
-    color: #fff;
+    color: #fff; 
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* color: rgb(99, 99, 99); */
 }
 
 .advertencia {
-    font-size: 10pt;
+    font-size: 18px;
     margin-bottom: 0px;
 }
 
 .subtitle {
     color:#a6ce39ff;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-top: 2rem;
     text-align: center;  
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
 }
 
 .sub {
@@ -68,8 +74,10 @@ form{
 
 h3 {
     color: white;
-    font-size: 15pt;
+    font-size: 18pt;
     margin-bottom: 0px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
 }
 
 h3 span {
@@ -140,8 +148,10 @@ iframe {
     border: none;
     height: 3rem;
     width: 9rem;   
-    font-size: 18pt;
+    font-size: 20pt;
     margin-top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
 }
 
 
